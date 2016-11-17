@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Allow site to be scaled down in mobile mode -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Simple Style</title>
+
+        <link href="/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="/lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.less" rel="stylesheet/less" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+        <!-- set options before less.js script -->
+        <script>
+          less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            relativeUrls: false,
+            rootpath: ":/a.com/"
+          };
+        </script>
+        <script src="/lib/less/dist/less.js"></script>
+    </head>
+    <body ng-app="App">
+        <div class="page">
+            <div class="header">
+                <div class="row cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart Empty
+                </div>
+ C^
+                        <h1><span>blanko</span>shop</h1>
+                        <p>A blank theme for Virtuemart and Joomla 3</p>
+                    </div>
+                    <div class="search">
+                        <input placeholder="search...">
+                    </div>
+                </div>
+
+                <!-- Creating the nav bar -->
+                <nav>
+                    <a class="" href="/#/home">Home</a>
+                    <a class="active" href="/#/Frnode_modules\.bin\json-server db.json --static publicont Page">Front Page</a>
+                    <a class="" href="/#/product">Product</a>
+                </nav>
+            </div>
+            <div class="body">
+                <div ui-view></div>
+            </div>
+            <div class="footer">
+                <a href="#">Joomla Template by Joomlabamboo</a>
+            </div>
+        </div>
+
+        <script src="/lib/jquery/dist/jquery.js"></script>
+        <script src="/js/jquery-sample.js"></script>
+
+        <script src="/lib/angular/angular.js"></script>
+        <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="/js/App.js"></script>
+        <script src="/js/HomeController.js"></script>
+        <script src="/js/ProductController.js"></script>
+    </body>
+</html>
